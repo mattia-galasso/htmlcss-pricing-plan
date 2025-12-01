@@ -20,36 +20,136 @@ a {
   text-decoration: none;
 }
 
+button {
+  text-decoration: none;
+  border: none;
+}
+
 /* UTILITIES */
+
+body {
+  font-family: sans-serif;
+}
 
 .debug,
 .debug > * {
   border: 3px dashed red;
-  padding: 6px;
   min-height: 30px;
 }
 
 /* LAYOUT */
 
-.wrapper {
+.container {
+  max-width: 70%;
+  padding: 0 0.5rem;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.page-header {
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN CONTENTS */
+.page-main {
+  margin: 30px 0;
+}
+
+.cards-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  height: 650px;
+}
+
+.plan-card {
+  width: calc(100% / 3 - 1.5rem * 2 / 3);
+  height: ;
+  border-radius: 15px;
+  padding: 2.5rem;
+  background-color: white;
+  box-shadow: 0px 0px 20px 0px #9d9d9d;
+
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  gap: 2rem;
 }
 
-.page-header {
-  min-height: 80px;
-  background-color: rgb(220, 220, 220);
+/* INFORMATION */
+.plan-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
 }
 
-.page-main {
-  flex-grow: 1;
-  overflow: auto;
+.plan-name {
+  align-self: flex-start;
 }
 
-.page-footer {
-  min-height: 80px;
-  background-color: rgb(22, 22, 22);
+.plan-name > span,
+.prize-plan {
+  color: #808080;
+}
+
+.prize-plan > .dollar-symbol,
+.prize-plan > .prize {
+  color: black;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.prize-plan > .prize {
+  font-size: 3rem;
+}
+
+.plan-yearly {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-size: 0.9rem;
+}
+
+.rate-square {
+  width: 4.5rem;
+  height: 2rem;
+  background: #e3e3e3;
+  align-content: center;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* CHOOSE PLAN BUTTON */
+.choose-btn {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+
+  border-radius: 15px;
+  background-color: #6500ff;
   color: white;
-  margin-top: auto;
+  font-weight: 600;
+}
+
+/* PERMISSIONS LIST */
+
+.products-lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+  font-weight: 300;
+}
+
+.products-lists i {
+  font-size: 1.8rem;
+  padding-right: 5px;
 }

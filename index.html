@@ -8,16 +8,90 @@
     <meta name="keywords" content="" />
     <title>Pricing Plan</title>
 
+    <!-- BOOTSTRAP ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="wrapper">
+    <div class="container">
       <header class="page-header">
-        <div class="header-container"></div>
+        <!-- HEADER -->
+        <div class="header-text">
+          <h1>Our Pricing Plan</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi,
+            soluta, non ipsum quibusdam ducimus illum totam earum sequi
+            repudiandae reprehenderit sunt ea molestiae atque nemo id.
+          </p>
+        </div>
+        <div class="planner-period">
+          <span>Monthly</span>
+          <span>Yearly</span>
+        </div>
       </header>
-      <main class="page-main"></main>
-      <footer class="page-footer"></footer>
+      <main class="page-main">
+        <section class="cards-section">
+          <!-- BASIC PLAN -->
+          <div class="basic-plan plan-card">
+            <section class="plan-infos">
+              <div class="plan-name">
+                <h2>Basic</h2>
+                <span>Most Popular</span>
+              </div>
+              <div class="prize-plan">
+                <span class="dollar-symbol">$</span>
+                <span class="prize">2.45</span> /mo
+              </div>
+              <div class="plan-yearly">
+                Yearly
+                <div class="rate-square">15% Off</div>
+              </div>
+            </section>
+            <button class="choose-btn">Choose plan</button>
+            <ul class="products-lists">
+              <li>
+                <i class="bi bi-check2"></i>
+                <span class="item-product">Unlimited Products</span>
+              </li>
+              <li>
+                <i class="bi bi-check2"></i>
+                <span class="item-product">Custom Permissions</span>
+              </li>
+              <li>
+                <i class="bi bi-check2"></i>
+                <span class="item-product">Custom Infrastructure</span>
+              </li>
+              <li>
+                <i class="bi bi-x-lg"></i>
+                <span class="item-product">Custom Design & features</span>
+              </li>
+              <li>
+                <i class="bi bi-x-lg"></i>
+                <span class="item-product">Unlimited updates</span>
+              </li>
+              <li>
+                <i class="bi bi-x-lg"></i>
+                <span class="item-product">Unlimited Infrastructure</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- PROFESSIONAL PLAN -->
+          <div class="debug professional-plan plan-card">
+            <h2>Professional</h2>
+          </div>
+
+          <!-- ULTIMATE PLAN -->
+          <div class="debug ultimate-plan plan-card">
+            <h2>Ultimate</h2>
+          </div>
+        </section>
+      </main>
     </div>
   </body>
 </html>
