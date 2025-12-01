@@ -37,22 +37,61 @@ body {
   min-height: 30px;
 }
 
+.desc-header,
+.planner-period,
+.desc-plan,
+.frequency-renew {
+  color: #808080;
+}
+
 /* LAYOUT */
 
 .container {
-  max-width: 70%;
+  max-width: 1200px;
   padding: 0 0.5rem;
   margin: 0 auto;
 }
 
 /* HEADER */
 .page-header {
-  margin: 30px 0;
+  margin: 30px 0 50px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
+.header-text {
+  padding-bottom: 30px;
+}
+
+.desc-header {
+  font-size: 0.9rem;
+}
+
+.planner-period {
+  align-self: flex-start;
+  text-align: right;
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.planner-period span {
+  line-height: 30px;
+}
+
+.planner-period i {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.on-switch {
+  padding-right: 5px;
+  color: black;
+}
 /* MAIN CONTENTS */
 .page-main {
   margin: 30px 0;
@@ -64,20 +103,22 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  height: 650px;
+  flex-wrap: wrap;
 }
 
 .plan-card {
   width: calc(100% / 3 - 1.5rem * 2 / 3);
-  height: ;
+  min-width: 378px;
   border-radius: 15px;
   padding: 2.5rem;
   background-color: white;
   box-shadow: 0px 0px 20px 0px #9d9d9d;
+  /* min-height: 650px; */
 
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  flex-grow: 1;
 }
 
 /* INFORMATION */
@@ -93,14 +134,8 @@ body {
   align-self: flex-start;
 }
 
-.plan-name > span,
-.prize-plan {
-  color: #808080;
-}
-
 .prize-plan > .dollar-symbol,
 .prize-plan > .prize {
-  color: black;
   font-weight: 600;
   font-size: 1.1rem;
 }
@@ -129,13 +164,15 @@ body {
 /* CHOOSE PLAN BUTTON */
 .choose-btn {
   width: 100%;
-  height: 50px;
+  height: 60px;
   margin: 0 auto;
 
   border-radius: 15px;
   background-color: #6500ff;
   color: white;
   font-weight: 600;
+
+  cursor: pointer;
 }
 
 /* PERMISSIONS LIST */
@@ -152,4 +189,32 @@ body {
 .products-lists i {
   font-size: 1.8rem;
   padding-right: 5px;
+}
+
+/* PROFESSIONAL PLAN */
+
+.professional-plan {
+  background-color: #6500ff;
+  color: white;
+}
+
+.professional-plan .rate-square {
+  color: black;
+}
+
+.professional-plan button {
+  color: #6500ff;
+  background-color: white;
+}
+
+/* ULTIMATE PLAN */
+.ultimate-plan > .products-lists {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ultimate-plan > .products-lists li {
+  flex-basis: 360px;
 }
